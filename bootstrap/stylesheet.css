@@ -1,0 +1,133 @@
+/*
+ * Login php mysql ajax
+ * Php mysql Ajax,
+ * Copyright 2015 bloguero-ec.
+ * Usese cómo mas le convenga no elimine estas líneas (http://www.bloguero-ec.com)
+*/
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    background-color: #121212;
+    color: #f0f0f0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+#allContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    text-align: center;
+}
+
+.inner {
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+#alertBoxes {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+.loginBlock {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    background: #2a2a2a;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.loginBlock form input[type="text"],
+.loginBlock form input[type="password"] {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 5px;
+    color: #f0f0f0;
+    transition: border 0.2s;
+}
+
+.loginBlock form input[type="text"]:focus,
+.loginBlock form input[type="password"]:focus {
+    border-color: #00bcd4;
+    outline: none;
+}
+
+.loginBlock form button {
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #00bcd4;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.loginBlock form button:hover {
+    background-color: #0097a7;
+}
+
+.timer {
+    width: 20px;
+    height: 20px;
+    background-image: url('images/ajax-loader.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.box-info, .box-success, .box-alert, .box-error {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-left: 6px solid;
+    border-radius: 5px;
+}
+
+.box-info {
+    background-color: #283593;
+    border-color: #536dfe;
+    color: #e3f2fd;
+}
+
+.box-success {
+    background-color: #1b5e20;
+    border-color: #66bb6a;
+    color: #e8f5e9;
+}
+
+.box-alert {
+    background-color: #f57f17;
+    border-color: #ffca28;
+    color: #fffde7;
+}
+
+.box-error {
+    background-color: #b71c1c;
+    border-color: #ef5350;
+    color: #ffebee;
+}
+
+.session_on {
+    text-align: left;
+    padding-top: 10px;
+    color: #ccc;
+}
